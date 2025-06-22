@@ -10,13 +10,11 @@ import random
 # Create the start_game function.
 def start_game():    
 # Write your code inside this function.
-    print("test print 1")
 
-
-start_game()
 #   When the program starts, we want to:
 #   ------------------------------------
 #   1. Display an intro/welcome message to the player.
+    print("Hey! Welcome to the Guessing Game! Choose a number between 1 and 10")
 #   2. Store a random number as the answer/solution.
 #   3. Continuously prompt the player for a guess.
 #     a. If the guess is greater than the solution, display to the player "It's lower".
@@ -30,3 +28,4 @@ start_game()
 
 
 # Kick off the program by calling the start_game function.
+start_game()
