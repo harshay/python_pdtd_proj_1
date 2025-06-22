@@ -9,10 +9,11 @@ import random
 
 # Create the start_game function.
 def start_game():    
-
 # Write your code inside this function.
     print("test print 1")
 
+
+start_game()
 #   When the program starts, we want to:
 #   ------------------------------------
 #   1. Display an intro/welcome message to the player.
