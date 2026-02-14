@@ -16,7 +16,12 @@ def start_game():
 #   1. Display an intro/welcome message to the player.
     print("Hey! Welcome to the Guessing Game! Choose a number between 1 and 10")
 #   2. Store a random number as the answer/solution.
-#   3. Continuously prompt the player for a guess.
+    answer = random.randint(1,10)
+    print(answer)  
+#   3. Continuously prompt the player for a guess. 
+    player_guess = input() 
+    print("your guess is {player_guess}")
+
 #     a. If the guess is greater than the solution, display to the player "It's lower".
 #     b. If the guess is less than the solution, display to the player "It's higher".
 
