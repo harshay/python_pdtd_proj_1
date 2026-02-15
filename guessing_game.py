@@ -20,10 +20,12 @@ def start_game():
     print(answer)  
 #   3. Continuously prompt the player for a guess.
 
-while player_guess == answer: 
+    while player_guess == answer: 
+        
+        player_guess = input("Enter your guess ") 
+        print("your guess is",player_guess) 
 
-    player_guess = input("Enter your guess ") 
-    print("your guess is",player_guess)
+    
                                                                                                                                                                                              
                                                                                                                                                                                              
 #     a. If the guess is greater than the solution, display to the player "It's lower".
