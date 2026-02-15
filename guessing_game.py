@@ -18,10 +18,14 @@ def start_game():
 #   2. Store a random number as the answer/solution.
     answer = random.randint(1,10)
     print(answer)  
-#   3. Continuously prompt the player for a guess. 
-    player_guess = input() 
-    print("your guess is {player_guess}")
+#   3. Continuously prompt the player for a guess.
 
+while player_guess == answer: 
+
+    player_guess = input("Enter your guess ") 
+    print("your guess is",player_guess)
+                                                                                                                                                                                             
+                                                                                                                                                                                             
 #     a. If the guess is greater than the solution, display to the player "It's lower".
 #     b. If the guess is less than the solution, display to the player "It's higher".
 
