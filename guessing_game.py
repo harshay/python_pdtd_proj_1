@@ -20,7 +20,7 @@ def start_game():
     print(answer)  
 #   3. Continuously prompt the player for a guess.
 
-    while player_guess == answer: 
+    while True: 
         
         player_guess = input("Enter your guess ") 
         print("your guess is",player_guess) 
