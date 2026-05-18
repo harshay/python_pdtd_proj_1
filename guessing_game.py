@@ -9,13 +9,12 @@ import random
 
 # Create the start_game function.
 def start_game():    
-# Write your code inside this function.
+
 
 #   When the program starts, we want to:
 #   ------------------------------------
 #   1. Display an intro/welcome message to the player.
     print("Hey! Welcome to the Guessing Game! Choose a number between 1 and 10")
-
     
     
 #   2. Store a random number as the answer/solution.
@@ -27,29 +26,18 @@ def start_game():
 #   3. Continuously prompt the player for a guess.
     while True:             
 
-        player_guess = input("Enter your guess ") 
+        player_guess = int(input("Enter your guess "))
         print("your guess is",player_guess) 
         guess_count = guess_count + 1
-        print("your total guesses are ",guess_count)
+        print("Your total guesses are ",guess_count)
 
         if player_guess > answer:
             print("It's Lower")   
         elif player_guess < answer:
             print("It's Higher")
+        else:
+            print("You got the answer in ",guess_count," guesses! The game will now end.")
+            break
 
-                                                                                                                                                                                             
-                                                                                                                                                                                             
-#     a. If the guess is greater than the solution, display to the player "It's lower".
-#     b. If the guess is less than the solution, display to the player "It's higher".
-
-
-
-#   4. Once the guess is correct, stop looping, inform the user they "Got it"
-#      and show how many attempts it took them to get the correct number.
-#   5. Let the player know the game is ending, or something that indicates the game is over.
-
-# ( You can add more features/enhancements if you'd like to. )
-
-
-# Kick off the program by calling the start_game function.
+                                 
 start_game()
