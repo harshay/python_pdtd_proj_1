@@ -16,13 +16,15 @@ def start_game():
 #   1. Display an intro/welcome message to the player.
     print("Hey! Welcome to the Guessing Game! Choose a number between 1 and 10")
     
-    
-#   2. Store a random number as the answer/solution.
-    answer = random.randint(1,10)
     last_guess_count = 999999999
-    guess_count = 0    
+    
+#   2. Store a random number as the answer/solution.    
 
     while True:
+
+        answer = random.randint(1,10)
+        guess_count = 0
+
 
 #   3. Continuously prompt the player for a guess.
         while True:             
