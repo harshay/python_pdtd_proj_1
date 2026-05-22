@@ -53,9 +53,10 @@ def start_game():
         if play_again_val.lower() == 'no':
             print("The game will now end. Goodbye!")
             break 
+            
         else:
             if guess_count < last_guess_count:
                 last_guess_count = guess_count
-            print("your best score in this game is ",last_guess_count)
+                print("your best score in this game is ",last_guess_count)
 
 start_game()
