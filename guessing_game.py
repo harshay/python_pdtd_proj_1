@@ -16,6 +16,7 @@ def start_game():
 #   1. Display an intro/welcome message to the player.
     print("Hey! Welcome to the Guessing Game! Choose a number between 1 and 10")
     
+    #initialise
     last_guess_count = 999999999
     
 #   2. Store a random number as the answer/solution.    
@@ -31,11 +32,13 @@ def start_game():
             
             try:            
                 player_guess = int(input("Enter your guess "))
-                if player_guess < 1 or player_guess > 10:
-                    print("oops! you guess needs to be a number between 1 and 10. Try again.")
             except ValueError: 
                 print("oh no! we ran into an issue. Please try again. Enter numbers only")
             else: 
+                if player_guess < 1 or player_guess > 10:
+                    print("oops! you guess needs to be a number between 1 and 10. Try again.")
+                    continue
+
                 print("your guess is",player_guess) 
                 guess_count = guess_count + 1
                 print("Your total guesses are ",guess_count," ")
@@ -55,8 +58,10 @@ def start_game():
             break 
             
         else:
+
             if guess_count < last_guess_count:
                 last_guess_count = guess_count
-                print("your best score in this game is ",last_guess_count)
+
+        print("your best score in this game is ",last_guess_count)
 
 start_game()
